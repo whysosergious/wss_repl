@@ -16,6 +16,7 @@ const defaultMainFile = 'src/App.vue'
 
 export const importMapFile = 'import-map.json'
 export const tsconfigFile = 'tsconfig.json'
+
 const tsconfig = {
   compilerOptions: {
     allowJs: true,
@@ -66,7 +67,7 @@ export class File {
 }
 
 export interface StoreState {
-mainFile: string
+  mainFile: string
   files: Record<string, File>
   activeFile: File
   errors: (string | Error)[]
@@ -89,7 +90,6 @@ export interface SFCOptions {
 }
 
 export interface Store {
-  active_editor: any
   state: StoreState
   options?: SFCOptions
   compiler: typeof defaultCompiler

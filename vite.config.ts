@@ -62,6 +62,7 @@ export default mergeConfig(base, {
     minify: false,
     lib: {
       entry: {
+        'pocket': './src/index.ts',
         'vue-repl': './src/index.ts',
         'monaco-editor': './src/editor/MonacoEditor.vue',
         'codemirror-editor': './src/editor/CodeMirrorEditor.vue',
