@@ -66,7 +66,7 @@ sidenote: the hashes define doc content, 4x - groups/files.
 *? *******************************************/
 
 
-import default_editor from '../editor/CodeMirrorEditor.vue'
+ import default_editor from '../editor/CodeMirrorEditor.vue'
 import PocketRoot from './cmp_vue/PocketRoot.vue'
 
 
@@ -75,44 +75,44 @@ export const the_myth = {
       
 }
 
-// import { h } from 'vue'
+import { h } from 'vue'
 
 
-// const renderComponent = function({ el, component, props, appContext }: any) {
-//       let vnode = createVNode(component, props)
-//       vnode.appContext = { ...appContext }
-//       render(vnode, el)
-  
-//       return () => {
-//           //!! destroy
-//           render(null, el)
-//           vnode = undefined as any
-//       }
-//   }
-  
-//   let component: any = null
-//   export const insertComponent = async () => {
-//       const component_element = document.createElement('div')
-//       document.body.appendChild(component_element)
-  
-//       component?.()
-//       component = renderComponent({
-//           el: component_element,
-//       //     component: (await import('@shared/components/AbstractBlock/AbstractBlock.vue')).default,
-//       //     props: {
-//             //   block
-//       //     },
-//       //     appContext: au_state.appContext
-//       })
-//   }
+const renderComponent = function({ el, component, props, appContext }: any) {
+      let vnode = createVNode(component, props)
+      vnode.appContext = { ...appContext }
+      render(vnode, el)
+ 
+      return () => {
+          //!! destroy
+          render(null, el)
+          vnode = undefined as any
+      }
+  }
+
+  let component: any = null
+  export const insertComponent = async () => {
+      const component_element = document.createElement('div')
+      document.body.appendChild(component_element)
+
+      component?.()
+      component = renderComponent({
+          el: component_element,
+          component: (await import('@shared/components/AbstractBlock/AbstractBlock.vue')).default,
+          props: {
+              // block
+          },
+          // appContext: au_state.appContext
+      })
+  }
   
 //   window.f = () => {
 
 //       'ffs'
 
-//       '<3'
+//       @src/
 //   }
-//   from 'vue'
+//   from 11'vue'
 // import { pocket } from ''
 
 // const App = {
