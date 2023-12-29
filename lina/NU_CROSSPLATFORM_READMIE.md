@@ -1,3 +1,3 @@
-compili nu read:
+compiling nu read:
 
 https://www.nushell.sh/book/installation.html#package-managers

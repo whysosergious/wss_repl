@@ -11,7 +11,16 @@ name = "lina"
 path = "src/main.rs"
 
 [dependencies]
-reedline = "0.27.1"
-[dependencies.crossterm]
+clap_complete_nushell = "4.4.2"               # nu - piping engine + interactive repl + ton moe 
+clap = "4.4.12"                               # clap - command line parser - clap & nu were made for eahcother <
+starship = "1.17.0"                           # ###   holy shit prompter .. ring most to the table utility wise
+reedline = "0.27.1"      
+ratatui = "0.25.0"        ## NOTE: this is only the base crate                 #   # no bullshit cli reader & more
+[dependencies.crossterm]              #
 version = "0.27"
 features = ["event-stream"]     # CORSSTERM HAS SOME STUFF BEHIND FEATURE FLAGShttps://github.com/crossterm-rs/crossterm?tab=readme-ov-file#getting-started
+zellij = "0.39.2"          ## NOTE: this is only the base crate      ##  multiplexer wt doessnt hold a candle to  
+
+
+
+
