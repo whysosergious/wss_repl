@@ -1,0 +1,9 @@
+[repository]
+name="another bundle cfg"
+version="0.0.1"
+authors=[
+  "whysosergios", "wss@magic.no",
+]
+desriptioion="onion of abstraction"
+
+"documéntatiom = explain youaself"

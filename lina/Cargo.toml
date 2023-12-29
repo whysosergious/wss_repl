@@ -1,0 +1,5 @@
+[package]
+description = "the line waant"
+name = "lina"
+version = "0.0.1"
+description.workspace = "acli"
