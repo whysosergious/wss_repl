@@ -6,20 +6,20 @@ Vue SFC REPL as a Vue 3 component.
 
 **Note: 2.0 now supports Monaco Editor, but also requires explicitly passing in the editor to be used for tree-shaking.**
 
-### With CodeMirror Editor
+### With Vcm5 Editor
 
 Basic editing experience with no intellisense. Lighter weight, fewer network requests, better for embedding use cases.
 
 ```vue
 <script setup>
 import { Repl } from '@vue/repl'
-import CodeMirror from '@vue/repl/codemirror-editor'
+import Vcm5 from '@vue/repl/vcm5-editor'
 // import '@vue/repl/style.css'
 // ^ no longer needed after 3.0
 </script>
 
 <template>
-  <Repl :editor="CodeMirror" />
+  <Repl :editor="Vcm5" />
 </template>
 ```
 
@@ -30,7 +30,7 @@ With Volar support, autocomplete, type inference, and semantic highlighting. Hea
 ```vue
 <script setup>
 import { Repl } from '@vue/repl'
-import Monaco from '@vue/repl/monaco-editor'
+import Monaco from '@vue/repl/editors/monaco-editor'
 // import '@vue/repl/style.css'
 // ^ no longer needed after 3.0
 </script>
@@ -48,7 +48,7 @@ Customize the behavior of the REPL by manually initializing the store.
 <script setup>
 import { watchEffect } from 'vue'
 import { Repl, ReplStore } from '@vue/repl'
-import Monaco from '@vue/repl/monaco-editor'
+import Monaco from '@vue/repl/editors/monaco-editor'
 
 // retrieve some configuration options from the URL
 const query = new URLSearchParams(location.search)

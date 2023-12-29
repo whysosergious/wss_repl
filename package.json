@@ -21,9 +21,9 @@
       "import": "./dist/monaco-editor.js",
       "require": null
     },
-    "./codemirror-editor": {
-      "types": "./dist/codemirror-editor.d.ts",
-      "import": "./dist/codemirror-editor.js",
+    "./vcm5-editor": {
+      "types": "./dist/vcm5-editor.d.ts",
+      "import": "./dist/vcm5-editor.js",
       "require": null
     },
     "./style.css": "./dist/vue-repl.css",
@@ -45,14 +45,6 @@
     "release": "bumpp --all",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "prepublishOnly": "npm run build"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged --concurrent false"
-  },
-  "lint-staged": {
-    "*": [
-      "prettier --write --cache --ignore-unknown"
-    ]
   },
   "repository": {
     "type": "git",

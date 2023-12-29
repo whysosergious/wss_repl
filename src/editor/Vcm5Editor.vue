@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import CodeMirror, { type Props } from '../codemirror/CodeMirror.vue'
+import Vcm5, { type Props } from '../EditorBundles/cm5/cm5.vue'
 import { computed } from 'vue'
 import type { EditorEmits, EditorProps } from './types'
 
 defineOptions({
-  editorType: 'codemirror',
+  editorType: 'vcm5',
 })
 
 const props = defineProps<EditorProps>()
@@ -39,5 +39,5 @@ const activeMode = computed(() => {
 </script>
 
 <template>
-  <CodeMirror @change="onChange" :value="value" :mode="activeMode" />
+	<Vcm5 @change="onChange" :value="value" :mode="activeMode" />
 </template>

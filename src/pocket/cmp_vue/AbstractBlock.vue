@@ -80,7 +80,7 @@ const props = defineProps<{
 //? - element reference when the custom element constructor is called..
 //? - this is extra nifty for integrations and plugins that require DOM Node bindings
 //. - ex. of pro's with the mentioned approach:
-//.     - codemirror can call `CodeMirror(this, cm_options)`
+//.     - cm5/can call `Vcm5(this, cm_options)`
 //. 		- vue application instances can call 'app.mount(this)'
 //' ---------------------------------------------------
 // let block_ref = ref()
@@ -88,7 +88,7 @@ const props = defineProps<{
 // props.block.runtime.attr.ref = "block_ref"
 // onMounted(() => {
 // 	props.block.runtime.el = block_ref.value
-// 	if (props.block.runtime.state?.codemirror) props.block.runtime.cmi = props.block.runtime.state?.codemirror?.()
+// 	if (props.block.runtime.state?.cm5/ props.block.runtime.cmi = props.block.runtime.state?.codemirror?.()
 // })
 // //! END LAZY_BLOCK
 //
