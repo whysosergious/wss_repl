@@ -5,3 +5,13 @@ description = "the line waant"
 
 [workspace]
 members = []
+
+[[bin]]
+name = "lina"
+path = "src/main.rs"
+
+[dependencies]
+reedline = "0.27.1"
+[dependencies.crossterm]
+version = "0.27"
+features = ["event-stream"]     # CORSSTERM HAS SOME STUFF BEHIND FEATURE FLAGShttps://github.com/crossterm-rs/crossterm?tab=readme-ov-file#getting-started
