@@ -1,17 +1,17 @@
 <script lang="ts">
-import { BuilderBlock } from "../def/block.d"
+import { BuilderBlock } from '../def/block.d'
 
-import pocket from "./pocket/mod"
+import pocket from './pocket/mod'
 
 const component = {
-	name: "PocketRoot",
+  name: 'PocketRoot',
 }
 export default {
-	...component,
+  ...component,
 }
 </script>
 
 <script setup lang="ts"></script>
 <template>
-	<PocketRoot :block="pocket" />
+  <PocketRoot :block="pocket" />
 </template>

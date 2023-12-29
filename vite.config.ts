@@ -54,7 +54,7 @@ export default mergeConfig(base, {
       'typescript',
       'monaco-editor-core/esm/vs/editor/editor.worker',
       'vue/server-renderer',
-    ],§
+    ],
   },
   base: './',
   build: {
@@ -62,7 +62,7 @@ export default mergeConfig(base, {
     minify: false,
     lib: {
       entry: {
-        'pocket': './src/index.ts',
+        pocket: './src/index.ts',
         'vue-repl': './src/index.ts',
         // 'monaco-editor': './src/editor/MonacoEditor.vue',
         'vcm5-editor': './src/editor/Vcm5Editor.vue',

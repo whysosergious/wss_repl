@@ -5,10 +5,10 @@
 // experiment extending it in pocket
 export enum BlockTrait {
   State = 1,
-  Props = 2,    
-  Style = 3,    
-  Event = 4,    
-  Text = 5,  
+  Props = 2,
+  Style = 3,
+  Event = 4,
+  Text = 5,
   Children = 20,
 }
 

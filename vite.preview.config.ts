@@ -22,7 +22,7 @@ export default defineConfig({
     },
   },
   worker: {
-    format: 'es',
+    format: 'es5',
     plugins: () => [
       replace({
         preventAssignment: true,

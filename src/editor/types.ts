@@ -1,5 +1,5 @@
-import Vcm5Editor from "./Vcm5Editorditor.vue";
-import MonacoEditor from "./MonacoEditor.vue";
+import Vcm5Editor from './Vcm5Editorditor.vue'
+import MonacoEditor from './MonacoEditor.vue'
 
 export type EditorComponentType = typeof Vcm5Editor | typeof MonacoEditor
 

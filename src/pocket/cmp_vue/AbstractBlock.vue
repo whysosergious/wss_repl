@@ -1,18 +1,18 @@
 <script lang="ts">
-import { computed, defineComponent, onMounted, ref } from "vue"
+import { computed, defineComponent, onMounted, ref } from 'vue'
 
-import { BuilderBlock } from "../def/block.d"
+import { BuilderBlock } from '../def/block.d'
 
 const component = {
-	name: "AbstractBlock_Vue",
+  name: 'AbstractBlock_Vue',
 }
 export default {
-	...component,
+  ...component,
 }
 </script>
 <script setup lang="ts">
 const props = defineProps<{
-	block: BuilderBlock
+  block: BuilderBlock
 }>()
 
 // const events = computed(() => {
@@ -113,17 +113,27 @@ const props = defineProps<{
 //! END LAZY_BLOCK
 </script>
 <template>
-	<component :id="block.iid" :is="block.is ?? 'div'" :style="block.style" v-bind="block.props" v-on="block.event ?? {}">
-		<!-- rendering trait data, should do this in a computed, 
+  <component
+    :id="block.iid"
+    :is="block.is ?? 'div'"
+    :style="block.style"
+    v-bind="block.props"
+    v-on="block.event ?? {}"
+  >
+    <!-- rendering trait data, should do this in a computed, 
       where we call the coponent factory function with given traits 
 		<template v-for="trait of block.traits" :key="`${block.sqiid}#${trait}`"> -->
-		<template v-if="block.children?.length">
-			<AbstractBlock v-for="(child, idx) of block.children" :block="child as any" :key="`${child.iid}`" />
-		</template>
-		<template v-if="block.text">
-			{{ block.text }}
-		</template>
-		<!-- </template> -->
-	</component>
+    <template v-if="block.children?.length">
+      <AbstractBlock
+        v-for="(child, idx) of block.children"
+        :block="child as any"
+        :key="`${child.iid}`"
+      />
+    </template>
+    <template v-if="block.text">
+      {{ block.text }}
+    </template>
+    <!-- </template> -->
+  </component>
 </template>
 <style></style>

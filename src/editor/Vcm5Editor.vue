@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Vcm5, { type Props } from '../EditorBundles/cm5/cm5.vue'
+import Vcm5, { type Props } from '../EditorBundles/cm5/Vcm5.vue'
 import { computed } from 'vue'
 import type { EditorEmits, EditorProps } from './types'
 
@@ -39,5 +39,5 @@ const activeMode = computed(() => {
 </script>
 
 <template>
-	<Vcm5 @change="onChange" :value="value" :mode="activeMode" />
+  <Vcm5 @change="onChange" :value="value" :mode="activeMode" />
 </template>

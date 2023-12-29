@@ -1,4 +1,3 @@
-
 /*************************************************************
 *! __________________________________________________________
 *? ---------------------------------------------------------- 
@@ -65,24 +64,21 @@ sidenote: the hashes define doc content, 4x - groups/files.
 *! ********************************************
 *? *******************************************/
 
-
 //  import default_editor from '../editor/Vcm5Editor.vue'
 // import PocketRoot from './cmp_vue/PocketRoot.vue'
 
-
 // export const the_myth = {
 //       setup( ) {}
-      
+
 // }
 
 // import { h } from 'vue'
-
 
 // const renderComponent = function({ el, component, props, appContext }: any) {
 //       let vnode = createVNode(component, props)
 //       vnode.appContext = { ...appContext }
 //       render(vnode, el)
- 
+
 //       return () => {
 //           //!! destroy
 //           render(null, el)
@@ -105,7 +101,6 @@ sidenote: the hashes define doc content, 4x - groups/files.
 //           // appContext: au_state.appContext
 //       })
 //   }
-  
 
 // //       'ffs'
 

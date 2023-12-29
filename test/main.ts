@@ -2,7 +2,7 @@ import { createApp, h, watchEffect } from 'vue'
 import { Repl, ReplStore } from '../src'
 // import MonacoEditor from '../src/editor/Vcm5Editor.vue'
 import default_editor from '../src/editor/Vcm5Editor.vue'
-;(window as any).process = { env: {} };
+;(window as any).process = { env: {} }
 
 const App = {
   setup() {
@@ -23,7 +23,6 @@ const App = {
 
     watchEffect(() => history.replaceState({}, '', store.serialize()))
 
-
     store.setVueVersion('3.3.13')
 
     return () =>
@@ -35,7 +34,7 @@ const App = {
         ssr: true,
         sfcOptions: {
           script: {
-             inlineTemplate: false
+            inlineTemplate: false,
           },
         },
         // showCompileOutput: false,
