@@ -14,7 +14,8 @@ path = "src/main.rs"
 clap_complete_nushell = "4.4.2"               # nu - piping engine + interactive repl + ton moe 
 clap = "4.4.12"                               # clap - command line parser - clap & nu were made for eahcother <
 starship = "1.17.0"                           # ###   holy shit prompter .. ring most to the table utility wise
-reedline = "0.27.1"      
+reedline = "0.27.1"  
+tokio-pipe = "0.2.12"       # !!! ##### TOOKIOOO!!! with piping! though missing a scripting so use nu's    
 ratatui = "0.25.0"        ## NOTE: this is only the base crate                 #   # no bullshit cli reader & more
 [dependencies.crossterm]              #
 version = "0.27"
@@ -27,3 +28,11 @@ zellij = "0.39.2"          ## NOTE: this is only the base crate      ##  multipl
 # CHECK THIS OOUT                                     #!! <--------------------------- 
 # even more on lib.rs!                                #!! <---------------------------       
 # https://lib.rs/keywords/cli                         #!! <---------------------------
+
+# https://lib.rs/development-tools
+
+### ' spec compile macro to make it not too hard you know XD
+# https://lib.rs/crates/commandspec'
+
+
+# right.. tree-sitter.. but I'll try the rust fter transpiling
