@@ -1,0 +1,6 @@
+{
+  "editor.fontSize": 12,
+  "editor.fontFamily": "B612Mono-Regula0",
+  "CodeGPT.Autocomplete.enabled": true,
+  "CodeGPT.Autocomplete.maxTokens": 1000000
+}

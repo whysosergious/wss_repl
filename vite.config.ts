@@ -26,13 +26,10 @@ const patchCssFiles: Plugin = {
   writeBundle() {
     // 1. MonacoEditor.css -> monaco-editor.css
     const outDir = path.resolve('dist')
-    fs.renameSync(
-      path.resolve(outDir, 'MonacoEditor.css'),
-      path.resolve(outDir, 'monaco-editor.css')
-    )
+
 
     // 2. inject css imports to the files
-    ;['vue-repl', 'monaco-editor', 'vcm5-editor'].forEach((file) => {
+    ;['vue-repl', 'vcm5-editor'].forEach((file) => {
       const filePath = path.resolve(outDir, file + '.js')
       const content = fs.readFileSync(filePath, 'utf-8')
       fs.writeFileSync(filePath, `import './${file}.css'\n${content}`)
@@ -52,7 +49,6 @@ export default mergeConfig(base, {
     // avoid late discovered deps
     include: [
       'typescript',
-      'monaco-editor-core/esm/vs/editor/editor.worker',
       'vue/server-renderer',
     ],
   },

@@ -1,8 +1,8 @@
 {
-  "name": "@vue/repl",
-  "version": "3.1.1",
-  "description": "Vue component for editing Vue components",
-  "packageManager": "pnpm@8.12.1",
+  "name": "@wss/cm6",
+  "version": "0.0.1",
+  "description": "CodeMirror componen using vue's extremely efficient shallowRef & mutable",
+
   "type": "module",
   "main": "dist/ssr-stub.js",
   "module": "dist/vue-repl.js",
@@ -15,11 +15,6 @@
       "types": "./dist/vue-repl.d.ts",
       "import": "./dist/vue-repl.js",
       "require": "./dist/ssr-stub.js"
-    },
-    "./monaco-editor": {
-      "types": "./dist/monaco-editor.d.ts",
-      "import": "./dist/monaco-editor.js",
-      "require": null
     },
     "./vcm5-editor": {
       "types": "./dist/vcm5-editor.d.ts",
@@ -51,7 +46,7 @@
     "url": "git+https://github.com/vuejs/repl.git"
   },
   "author": "Evan You",
-  "license": "MIT",
+  "license": "MIT",   
   "bugs": {
     "url": "https://github.com/vuejs/repl/issues"
   },

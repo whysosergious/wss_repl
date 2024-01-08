@@ -23,7 +23,7 @@ const App = {
 
     watchEffect(() => history.replaceState({}, '', store.serialize()))
 
-    store.setVueVersion('3.3.13')
+    // store.setVueVersion('3.3.13')
 
     return () =>
       h(Repl, {

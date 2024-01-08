@@ -20,9 +20,8 @@ export default defineConfig({
     commonjsOptions: {
       ignore: ['typescript'],
     },
-  },
-  worker: {
-    format: 'es5',
+  },  worker: {
+    format: 'es',
     plugins: () => [
       replace({
         preventAssignment: true,
